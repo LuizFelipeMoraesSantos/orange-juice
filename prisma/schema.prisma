@@ -38,5 +38,6 @@ model Project {
   deletedAt DateTime?
 
   @@index([userId])
+  @@unique([link])
   @@map("projects")
 }
